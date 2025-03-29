@@ -2,4 +2,4 @@ out
 .env
 learn-cicd-starter
 notely
-humans-suck-at-code-review [humans-suck-at-code-review].mp4
+*.mp4
