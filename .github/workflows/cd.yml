@@ -18,3 +18,9 @@ jobs:
 
       - name: Building notely
         run: scripts/buildprod.sh
+
+      - name: Setup GCloud
+        uses: google-github-actions/setup-gcloud@v2
+
+      - name: Deploying to GCloud
+        run: gcloud builds submit --tag us-central1-docker.pkg.dev/marine-compass-455308-u3/notely-ar-repo/notely:latest .
